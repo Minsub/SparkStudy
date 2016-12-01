@@ -9,7 +9,8 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by jiminsub on 2016. 11. 20..
   */
 object JsonIO {
-  val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  //val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  val PATH = "src/main/resources/"
 
   case class Person(name: String, lovesPandas: Boolean)
 

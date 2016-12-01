@@ -14,7 +14,7 @@ object ExampleRDD {
     val sc = new SparkContext(conf)
 
     // Create RDD
-    val fileRDD = sc.textFile("static/log.txt")
+    val fileRDD = sc.textFile("src/main/resources/static/log.txt")
     val lineRDD = sc.parallelize(List("i like an apple", "i am a boy"))
     val numberRDD = sc.parallelize(List(1,2,3,4,5))
     val number2RDD = sc.parallelize(List(2,4,4,6,8))

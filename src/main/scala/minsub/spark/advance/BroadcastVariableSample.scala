@@ -6,7 +6,6 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by jiminsub on 2016. 11. 20..
   */
 object BroadcastVariableSample {
-  val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
 
   def main(args: Array[String]) {
     val conf = new SparkConf().setMaster("local").setAppName("broadcast1")

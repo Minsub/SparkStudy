@@ -10,7 +10,8 @@ import org.apache.spark.rdd.JdbcRDD
   * Created by jiminsub on 2016. 11. 20..
   */
 object JdbcIO {
-  val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  //val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  val PATH = "src/main/resources/"
 
   def createConnection() = {
     Class.forName("org.postgresql.Driver").newInstance()

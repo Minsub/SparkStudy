@@ -11,7 +11,7 @@ object RDDSample {
     val conf = new SparkConf().setMaster("local").setAppName("rddSample")
     val sc = new SparkContext(conf)
 
-    val rdd = sc.textFile("static/log.txt")
+    val rdd = sc.textFile("src/main/resources/static/log.txt")
     val rddError = rdd.filter(line => line.contains("ERROR"))
     val rddWarn = rdd.filter(line => line.contains("WARN"))
 

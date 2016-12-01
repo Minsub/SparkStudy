@@ -9,7 +9,8 @@ import org.apache.spark.{SparkConf, SparkContext}
   * Created by jiminsub on 2016. 11. 20..
   */
 object AccumulatorSample {
-  val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  //val PATH = "file:/Users/jiminsub/workspace/ScalaMaven/"
+  val PATH = "src/main/resources/"
 
   def main(args: Array[String]) {
     val conf = new SparkConf().setMaster("local").setAppName("accumulator1")

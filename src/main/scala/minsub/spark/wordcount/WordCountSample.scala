@@ -7,7 +7,7 @@ object WordCountSample {
     val conf = new SparkConf().setMaster("local").setAppName("wordCount")
     val sc = new SparkContext(conf)
 
-    val fileRDD = sc.textFile("README_SPARK.md")
+    val fileRDD = sc.textFile("src/main/resources/static/README_SPARK.md")
     fileRDD.flatMap(line => line.split(" "))
       .map(word => (word, 1))
       .reduceByKey(_ + _)
