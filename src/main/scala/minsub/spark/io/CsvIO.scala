@@ -26,6 +26,7 @@ object CsvIO {
     })
 
     // show CSV
+    println("<Show CSV file RDD>")
     resultRDD.foreach(arr => println(arr.mkString(",")))
 
     // show CSV
@@ -40,6 +41,7 @@ object CsvIO {
     }
 
     // show PersonRDD
+    println("<Show PersonRDD>")
     personRDD.foreach(println(_))
 
   }
